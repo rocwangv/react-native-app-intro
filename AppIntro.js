@@ -210,7 +210,7 @@ export default class AppIntro extends Component {
           isSkipBtnShow={isSkipBtnShow}
           styles={this.styles}
           onSkipBtnClick={() => this.props.onSkipBtnClick(index)} /> :
-          <View style={this.styles.btnContainer} />
+          <View />
         }
         {this.props.showDots && RenderDots(index, total, {
           ...this.props,
@@ -223,7 +223,7 @@ export default class AppIntro extends Component {
             styles={this.styles}
             onNextBtnClick={this.onNextBtnClick.bind(this, context)}
             onDoneBtnClick={this.props.onDoneBtnClick} /> :
-            <View style={this.styles.btnContainer} />
+            <View />
           }
       </View>
     );
